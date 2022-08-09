@@ -1,9 +1,21 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: Issue Logger
+description: Report an open issue in Jenkins pipeline
+labels: 
+  - type: checkboxes
+    id: label
+    options:
+      - type: input
+        id: gear
+        attributes:
+          label: Gear ID
+          placeholder: ex. 5953
+        validations:
+          required: true  
+      - type: input
+        id: env
+        attributes:
+          label: Environment
+          placeholder: ex. dev   
 body:
   - type: markdown
     attributes:
