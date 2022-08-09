@@ -1,21 +1,6 @@
 name: Issue Logger
 description: Report an open issue in Jenkins pipeline
-labels: 
-  - type: checkboxes
-    id: label
-    options:
-      - type: input
-        id: gear
-        attributes:
-          label: Gear ID
-          placeholder: ex. 5953
-        validations:
-          required: true  
-      - type: input
-        id: env
-        attributes:
-          label: Environment
-          placeholder: ex. dev   
+labels: ['bug,triage'] 
 body:
   - type: markdown
     attributes:
